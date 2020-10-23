@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>/media/Data/RTLinux/RTLinux.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="Comm" projectFiles="true">
+        <logicalFolder name="f1" displayName="Modbus" projectFiles="true">
+          <itemPath>/media/Data/libmodbus-3.1.4/src/modbus-data.c</itemPath>
+          <itemPath>/media/Data/libmodbus-3.1.4/src/modbus-rtu.c</itemPath>
+          <itemPath>/media/Data/libmodbus-3.1.4/src/modbus-tcp.c</itemPath>
+          <itemPath>/media/Data/libmodbus-3.1.4/src/modbus.c</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Data/COMM/HTTPRequest.cpp</itemPath>
+        <itemPath>/media/Data/COMM/HTTPServer.cpp</itemPath>
+        <itemPath>/media/Data/COMM/LinuxARP.c</itemPath>
+        <itemPath>/media/Data/COMM/actuatorCommand.cpp</itemPath>
+        <itemPath>/media/Data/COMM/base64.cpp</itemPath>
+        <itemPath>/media/Data/COMM/canbusCommands.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchange.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchangeCAN.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchangeIO.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchangeSCR.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchangeSER.cpp</itemPath>
+        <itemPath>/media/Data/COMM/dataExchangeUSB-workinprogress.cpp</itemPath>
+        <itemPath>/media/Data/COMM/modbusCommands.cpp</itemPath>
+        <itemPath>/media/Data/COMM/sha1.cpp</itemPath>
+        <itemPath>/media/Data/COMM/webSocket.cpp</itemPath>
+        <itemPath>/media/Data/COMM/xProjectCommand.cpp</itemPath>
+        <itemPath>/media/Data/COMM/xrt_modbus.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Logic" projectFiles="true">
+        <itemPath>/media/Data/Logic/alarms.cpp</itemPath>
+        <itemPath>/media/Data/Logic/alarms.h</itemPath>
+        <itemPath>/media/Data/Logic/automatic.cpp</itemPath>
+        <itemPath>/media/Data/Logic/checks.cpp</itemPath>
+        <itemPath>/media/Data/Logic/constant.h</itemPath>
+        <itemPath>/media/Data/Logic/emergency.cpp</itemPath>
+        <itemPath>/media/Data/Logic/init.cpp</itemPath>
+        <itemPath>/media/Data/Logic/logic_precomp.cpp</itemPath>
+        <itemPath>/media/Data/Logic/logic_precomp.h</itemPath>
+        <itemPath>/media/Data/Logic/login.cpp</itemPath>
+        <itemPath>/media/Data/Logic/main.cpp</itemPath>
+        <itemPath>/media/Data/Logic/manual.cpp</itemPath>
+        <itemPath>/media/Data/Logic/preform_registry.cpp</itemPath>
+        <itemPath>/media/Data/Logic/recovering.cpp</itemPath>
+        <itemPath>/media/Data/Logic/simulate.cpp</itemPath>
+        <itemPath>/media/Data/Logic/track.cpp</itemPath>
+        <itemPath>/media/Data/Logic/track.h</itemPath>
+        <itemPath>/media/Data/Logic/ui-io.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="RTLinux" projectFiles="true">
+        <itemPath>/media/Data/RTLinux/ControlUnit.cpp</itemPath>
+        <itemPath>/media/Data/RTLinux/MemoryManager.cpp</itemPath>
+        <itemPath>/media/Data/RTLinux/RTLinux.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Utility" projectFiles="true">
+        <itemPath>/media/Data/libconfig-1.5/lib/grammar.c</itemPath>
+        <itemPath>/media/Data/libconfig-1.5/lib/libconfig.c</itemPath>
+        <itemPath>/media/Data/libconfig-1.5/lib/persistManager.c</itemPath>
+        <itemPath>/media/Data/libconfig-1.5/lib/scanctx.c</itemPath>
+        <itemPath>/media/Data/libconfig-1.5/lib/scanner.c</itemPath>
+        <itemPath>/media/Data/libconfig-1.5/lib/strbuf.c</itemPath>
+        <itemPath>/media/Data/RTLinux/Utility/utility.c</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/media/Data/RTLinuxCU</Elem>
+    <Elem>/media/Data/Logic</Elem>
+    <Elem>/media/Data/mTCP</Elem>
+    <Elem>/media/Data/RTLinux</Elem>
+    <Elem>/media/Data/COMM</Elem>
+    <Elem>/media/Data/libconfig-1.5/lib</Elem>
+    <Elem>/media/Data/libmodbus-3.1.4/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>/mount/Data/RTLinux</pElem>
+            <pElem>/mount/Data/Logic</pElem>
+            <pElem>/mount/Data/mTCP</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/mount/Data/RTLinux</pElem>
+            <pElem>/mount/Data/Logic</pElem>
+            <pElem>/mount/Data/mTCP</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="/media/Data/COMM/HTTPRequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/HTTPServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/LinuxARP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/actuatorCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/base64.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/canbusCommands.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeCAN.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeIO.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeSCR.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeSER.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeUSB-workinprogress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/modbusCommands.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/sha1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/webSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/xProjectCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/xrt_modbus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/alarms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/alarms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/automatic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/checks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/emergency.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/init.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/logic_precomp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/logic_precomp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/login.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/manual.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/preform_registry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/recovering.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/simulate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/track.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/track.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/ui-io.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/ControlUnit.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/MemoryManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/RTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/RTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/Utility/utility.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/grammar.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/libconfig.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/persistManager.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/scanctx.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/scanner.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/strbuf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-data.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-rtu.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-tcp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-O3</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-lpthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="/media/Data/COMM/HTTPRequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/HTTPServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/LinuxARP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/actuatorCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/base64.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/canbusCommands.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeCAN.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeIO.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeSCR.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeSER.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/dataExchangeUSB-workinprogress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/modbusCommands.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/sha1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/webSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/xProjectCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/COMM/xrt_modbus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/alarms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/alarms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/automatic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/checks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/emergency.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/init.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/logic_precomp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/logic_precomp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/login.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/manual.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/preform_registry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/recovering.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/simulate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/track.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/track.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/Logic/ui-io.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/ControlUnit.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/MemoryManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/RTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/RTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="/media/Data/RTLinux/Utility/utility.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/grammar.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/libconfig.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/persistManager.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/scanctx.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/scanner.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libconfig-1.5/lib/strbuf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-data.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-rtu.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus-tcp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Data/libmodbus-3.1.4/src/modbus.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

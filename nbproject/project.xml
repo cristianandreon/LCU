@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>LCU</name>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>/media/Data/RTLinuxCU</sourceRootElem>
+                <sourceRootElem>/media/Data/Logic</sourceRootElem>
+                <sourceRootElem>/media/Data/mTCP</sourceRootElem>
+                <sourceRootElem>/media/Data/RTLinux</sourceRootElem>
+                <sourceRootElem>/media/Data/COMM</sourceRootElem>
+                <sourceRootElem>/media/Data/libconfig-1.5/lib</sourceRootElem>
+                <sourceRootElem>/media/Data/libmodbus-3.1.4/src</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
