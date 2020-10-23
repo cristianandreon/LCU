@@ -52,20 +52,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/bef1c5b7/webSocket.o \
 	${OBJECTDIR}/_ext/bef1c5b7/xProjectCommand.o \
 	${OBJECTDIR}/_ext/bef1c5b7/xrt_modbus.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/alarms.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/automatic.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/checks.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/emergency.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/init.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/logic_precomp.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/login.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/main.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/manual.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/preform_registry.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/recovering.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/simulate.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/track.o \
-	${OBJECTDIR}/_ext/1fd4b5f3/ui-io.o \
+	${OBJECTDIR}/_ext/1fc5adf3/alarms.o \
+	${OBJECTDIR}/_ext/1fc5adf3/login.o \
+	${OBJECTDIR}/_ext/1fc5adf3/main.o \
+	${OBJECTDIR}/_ext/1fc5adf3/simulate.o \
+	${OBJECTDIR}/_ext/1fc5adf3/track.o \
 	${OBJECTDIR}/_ext/8b554d47/ControlUnit.o \
 	${OBJECTDIR}/_ext/8b554d47/MemoryManager.o \
 	${OBJECTDIR}/_ext/8b554d47/RTLinux.o \
@@ -79,7 +70,27 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/13972e7c/modbus-data.o \
 	${OBJECTDIR}/_ext/13972e7c/modbus-rtu.o \
 	${OBJECTDIR}/_ext/13972e7c/modbus-tcp.o \
-	${OBJECTDIR}/_ext/13972e7c/modbus.o
+	${OBJECTDIR}/_ext/13972e7c/modbus.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/automatic.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/checks.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/emergency.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/init.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/logic_precomp.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/manual.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/preform_registry.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/recovering.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/safety.o \
+	${OBJECTDIR}/_ext/8c2bd3e9/ui-io.o \
+	${OBJECTDIR}/_ext/4a6d875c/automatic.o \
+	${OBJECTDIR}/_ext/4a6d875c/emergency.o \
+	${OBJECTDIR}/_ext/4a6d875c/gcode.o \
+	${OBJECTDIR}/_ext/4a6d875c/init.o \
+	${OBJECTDIR}/_ext/4a6d875c/logic_precomp.o \
+	${OBJECTDIR}/_ext/4a6d875c/manual.o \
+	${OBJECTDIR}/_ext/4a6d875c/mill_utility.o \
+	${OBJECTDIR}/_ext/4a6d875c/recovering.o \
+	${OBJECTDIR}/_ext/4a6d875c/safety.o \
+	${OBJECTDIR}/_ext/4a6d875c/ui-io.o
 
 
 # C Compiler Flags
@@ -191,75 +202,30 @@ ${OBJECTDIR}/_ext/bef1c5b7/xrt_modbus.o: /media/Data/COMM/xrt_modbus.c
 	${RM} "$@.d"
 	$(COMPILE.c) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/bef1c5b7/xrt_modbus.o /media/Data/COMM/xrt_modbus.c
 
-${OBJECTDIR}/_ext/1fd4b5f3/alarms.o: /media/Data/Logic/alarms.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
+${OBJECTDIR}/_ext/1fc5adf3/alarms.o: /media/Data/LOGIC/alarms.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1fc5adf3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/alarms.o /media/Data/Logic/alarms.cpp
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fc5adf3/alarms.o /media/Data/LOGIC/alarms.cpp
 
-${OBJECTDIR}/_ext/1fd4b5f3/automatic.o: /media/Data/Logic/automatic.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
+${OBJECTDIR}/_ext/1fc5adf3/login.o: /media/Data/LOGIC/login.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1fc5adf3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/automatic.o /media/Data/Logic/automatic.cpp
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fc5adf3/login.o /media/Data/LOGIC/login.cpp
 
-${OBJECTDIR}/_ext/1fd4b5f3/checks.o: /media/Data/Logic/checks.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
+${OBJECTDIR}/_ext/1fc5adf3/main.o: /media/Data/LOGIC/main.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1fc5adf3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/checks.o /media/Data/Logic/checks.cpp
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fc5adf3/main.o /media/Data/LOGIC/main.cpp
 
-${OBJECTDIR}/_ext/1fd4b5f3/emergency.o: /media/Data/Logic/emergency.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
+${OBJECTDIR}/_ext/1fc5adf3/simulate.o: /media/Data/LOGIC/simulate.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1fc5adf3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/emergency.o /media/Data/Logic/emergency.cpp
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fc5adf3/simulate.o /media/Data/LOGIC/simulate.cpp
 
-${OBJECTDIR}/_ext/1fd4b5f3/init.o: /media/Data/Logic/init.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
+${OBJECTDIR}/_ext/1fc5adf3/track.o: /media/Data/LOGIC/track.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1fc5adf3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/init.o /media/Data/Logic/init.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/logic_precomp.o: /media/Data/Logic/logic_precomp.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/logic_precomp.o /media/Data/Logic/logic_precomp.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/login.o: /media/Data/Logic/login.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/login.o /media/Data/Logic/login.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/main.o: /media/Data/Logic/main.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/main.o /media/Data/Logic/main.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/manual.o: /media/Data/Logic/manual.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/manual.o /media/Data/Logic/manual.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/preform_registry.o: /media/Data/Logic/preform_registry.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/preform_registry.o /media/Data/Logic/preform_registry.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/recovering.o: /media/Data/Logic/recovering.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/recovering.o /media/Data/Logic/recovering.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/simulate.o: /media/Data/Logic/simulate.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/simulate.o /media/Data/Logic/simulate.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/track.o: /media/Data/Logic/track.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/track.o /media/Data/Logic/track.cpp
-
-${OBJECTDIR}/_ext/1fd4b5f3/ui-io.o: /media/Data/Logic/ui-io.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/1fd4b5f3
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fd4b5f3/ui-io.o /media/Data/Logic/ui-io.cpp
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1fc5adf3/track.o /media/Data/LOGIC/track.cpp
 
 ${OBJECTDIR}/_ext/8b554d47/ControlUnit.o: /media/Data/RTLinux/ControlUnit.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/8b554d47
@@ -330,6 +296,106 @@ ${OBJECTDIR}/_ext/13972e7c/modbus.o: /media/Data/libmodbus-3.1.4/src/modbus.c
 	${MKDIR} -p ${OBJECTDIR}/_ext/13972e7c
 	${RM} "$@.d"
 	$(COMPILE.c) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/13972e7c/modbus.o /media/Data/libmodbus-3.1.4/src/modbus.c
+
+${OBJECTDIR}/_ext/8c2bd3e9/automatic.o: /media/Data/xBM-Logic/automatic.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/automatic.o /media/Data/xBM-Logic/automatic.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/checks.o: /media/Data/xBM-Logic/checks.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/checks.o /media/Data/xBM-Logic/checks.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/emergency.o: /media/Data/xBM-Logic/emergency.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/emergency.o /media/Data/xBM-Logic/emergency.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/init.o: /media/Data/xBM-Logic/init.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/init.o /media/Data/xBM-Logic/init.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/logic_precomp.o: /media/Data/xBM-Logic/logic_precomp.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/logic_precomp.o /media/Data/xBM-Logic/logic_precomp.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/manual.o: /media/Data/xBM-Logic/manual.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/manual.o /media/Data/xBM-Logic/manual.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/preform_registry.o: /media/Data/xBM-Logic/preform_registry.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/preform_registry.o /media/Data/xBM-Logic/preform_registry.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/recovering.o: /media/Data/xBM-Logic/recovering.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/recovering.o /media/Data/xBM-Logic/recovering.cpp
+
+${OBJECTDIR}/_ext/8c2bd3e9/safety.o: /media/Data/xBM-Logic/safety.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/safety.o /media/Data/xBM-Logic/safety.c
+
+${OBJECTDIR}/_ext/8c2bd3e9/ui-io.o: /media/Data/xBM-Logic/ui-io.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8c2bd3e9
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8c2bd3e9/ui-io.o /media/Data/xBM-Logic/ui-io.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/automatic.o: /media/Data/xCNC-Logic/automatic.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/automatic.o /media/Data/xCNC-Logic/automatic.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/emergency.o: /media/Data/xCNC-Logic/emergency.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/emergency.o /media/Data/xCNC-Logic/emergency.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/gcode.o: /media/Data/xCNC-Logic/gcode.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/gcode.o /media/Data/xCNC-Logic/gcode.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/init.o: /media/Data/xCNC-Logic/init.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/init.o /media/Data/xCNC-Logic/init.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/logic_precomp.o: /media/Data/xCNC-Logic/logic_precomp.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/logic_precomp.o /media/Data/xCNC-Logic/logic_precomp.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/manual.o: /media/Data/xCNC-Logic/manual.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/manual.o /media/Data/xCNC-Logic/manual.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/mill_utility.o: /media/Data/xCNC-Logic/mill_utility.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/mill_utility.o /media/Data/xCNC-Logic/mill_utility.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/recovering.o: /media/Data/xCNC-Logic/recovering.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/recovering.o /media/Data/xCNC-Logic/recovering.cpp
+
+${OBJECTDIR}/_ext/4a6d875c/safety.o: /media/Data/xCNC-Logic/safety.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/safety.o /media/Data/xCNC-Logic/safety.c
+
+${OBJECTDIR}/_ext/4a6d875c/ui-io.o: /media/Data/xCNC-Logic/ui-io.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/4a6d875c
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DDEBUG -I/mount/Data/RTLinux -I/mount/Data/Logic -I/mount/Data/mTCP -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4a6d875c/ui-io.o /media/Data/xCNC-Logic/ui-io.cpp
 
 # Subprojects
 .build-subprojects:
