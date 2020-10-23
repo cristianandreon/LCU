@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../RTLinux/RTLinux.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="COMM" displayName="COMM" projectFiles="true">
+        <itemPath>../COMM/HTTPRequest.cpp</itemPath>
+        <itemPath>../COMM/HTTPRequest.h</itemPath>
+        <itemPath>../COMM/HTTPServer.cpp</itemPath>
+        <itemPath>../COMM/HTTPServer.h</itemPath>
+        <itemPath>../COMM/LinuxARP.c</itemPath>
+        <itemPath>../COMM/LinuxARP.h</itemPath>
+        <itemPath>../COMM/actuatorCommand.cpp</itemPath>
+        <itemPath>../COMM/actuatorCommand.h</itemPath>
+        <itemPath>../COMM/base64.cpp</itemPath>
+        <itemPath>../COMM/base64.h</itemPath>
+        <itemPath>../COMM/canbusCommands.cpp</itemPath>
+        <itemPath>../COMM/canbusCommands.h</itemPath>
+        <itemPath>../COMM/dataExchange.cpp</itemPath>
+        <itemPath>../COMM/dataExchange.h</itemPath>
+        <itemPath>../COMM/dataExchangeCAN.cpp</itemPath>
+        <itemPath>../COMM/dataExchangeCAN.h</itemPath>
+        <itemPath>../COMM/dataExchangeIO.cpp</itemPath>
+        <itemPath>../COMM/dataExchangeIO.h</itemPath>
+        <itemPath>../COMM/dataExchangeSCR.cpp</itemPath>
+        <itemPath>../COMM/dataExchangeSCR.h</itemPath>
+        <itemPath>../COMM/dataExchangeSER.cpp</itemPath>
+        <itemPath>../COMM/dataExchangeSER.h</itemPath>
+        <itemPath>../COMM/dataExchangeUSB-workinprogress.cpp</itemPath>
+        <itemPath>../COMM/dataExchangeUSB.h</itemPath>
+        <itemPath>../COMM/modbusCommands.cpp</itemPath>
+        <itemPath>../COMM/modbusCommands.h</itemPath>
+        <itemPath>../COMM/sha1.cpp</itemPath>
+        <itemPath>../COMM/sha1.h</itemPath>
+        <itemPath>../COMM/webSocket.cpp</itemPath>
+        <itemPath>../COMM/webSocket.h</itemPath>
+        <itemPath>../COMM/xProjectCommand.cpp</itemPath>
+        <itemPath>../COMM/xProjectCommand.h</itemPath>
+        <itemPath>../COMM/xrt_modbus.c</itemPath>
+        <itemPath>../COMM/xrt_modbus.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="LOGIC" displayName="LOGIC" projectFiles="true">
+        <itemPath>../LOGIC/alarms.cpp</itemPath>
+        <itemPath>../LOGIC/alarms.h</itemPath>
+        <itemPath>../LOGIC/constant.h</itemPath>
+        <itemPath>../LOGIC/login.cpp</itemPath>
+        <itemPath>../LOGIC/main.cpp</itemPath>
+        <itemPath>../LOGIC/simulate.cpp</itemPath>
+        <itemPath>../LOGIC/track.cpp</itemPath>
+        <itemPath>../LOGIC/track.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="RTLinux" projectFiles="true">
+        <itemPath>../RTLinux/ControlUnit.cpp</itemPath>
+        <itemPath>../RTLinux/MemoryManager.cpp</itemPath>
+        <itemPath>../RTLinux/RTLinux.c</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../RTLinuxCU</Elem>
+    <Elem>../Logic</Elem>
+    <Elem>../mTCP</Elem>
+    <Elem>../RTLinux</Elem>
+    <Elem>../COMM</Elem>
+    <Elem>../libmodbus-3.0.6/src</Elem>
+    <Elem>../libmodbus-3.1.0/src</Elem>
+    <Elem>../LOGIC</Elem>
+    <Elem>../COMM</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>Cygwin|Cygwin</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>/mount/Data/RTLinux</pElem>
+            <pElem>/mount/Data/Logic</pElem>
+            <pElem>/mount/Data/mTCP</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/mount/Data/RTLinux</pElem>
+            <pElem>/mount/Data/Logic</pElem>
+            <pElem>/mount/Data/mTCP</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../COMM/HTTPRequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPRequest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/LinuxARP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../COMM/LinuxARP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/actuatorCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/actuatorCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/base64.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/canbusCommands.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/canbusCommands.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchange.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeCAN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeCAN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeIO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeIO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSER.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeUSB-workinprogress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeUSB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/modbusCommands.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/modbusCommands.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/sha1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/webSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/webSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/xProjectCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/xProjectCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/xrt_modbus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../COMM/xrt_modbus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/alarms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/alarms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/login.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/simulate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/track.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/track.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../RTLinux/ControlUnit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../RTLinux/MemoryManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../RTLinux/RTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../RTLinux/RTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+        </linkerTool>
+      </compileType>
+      <item path="../COMM/HTTPRequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPRequest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/HTTPServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/LinuxARP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../COMM/LinuxARP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/actuatorCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/actuatorCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/base64.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/canbusCommands.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/canbusCommands.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchange.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeCAN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeCAN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeIO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeIO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSER.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeSER.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeUSB-workinprogress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../COMM/dataExchangeUSB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/modbusCommands.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/modbusCommands.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/sha1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/webSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/webSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/xProjectCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../COMM/xProjectCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../COMM/xrt_modbus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../COMM/xrt_modbus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/alarms.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/alarms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../LOGIC/login.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/simulate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/track.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../LOGIC/track.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../RTLinux/ControlUnit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../RTLinux/MemoryManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../RTLinux/RTLinux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../RTLinux/RTLinux.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
